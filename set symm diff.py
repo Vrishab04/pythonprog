@@ -1,0 +1,6 @@
+n = int(input())
+english_subscriptions = set(map(int, input().split()))
+m = int(input())
+french_subscriptions = set(map(int, input().split()))
+result = english_subscriptions.symmetric_difference(french_subscriptions)
+print(len(result))
